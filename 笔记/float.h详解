@@ -1,0 +1,42 @@
+/*
+float.h中的符号常量
+float.h与limits.h一样是定义边界值的,float.h定义的是浮点数的边界值
+
+
+double
+DBL_DIG            double小数点后面精确的位数
+DBL_EPSILON        小的正数,double的0跨度值
+DBL_MANT_DIG       尾数中的位数
+DBL_MAX            最大值
+DBL_MAX_10_EXP     最大10进制指数
+DBL_MAX_EXP        最大2进制指数
+DBL_MIN            最小值
+DBL_MIN_10_EXP     最小10进制指数
+DBL_MIN_EXP        最小2进制指数
+
+
+float
+FLT_DIG            float小数点后面精确的位数
+FLT_EPSILON        小的正书,float的0跨度值
+FLT_MANT_DLG       尾数中的位数
+FLT_MAX            最大值
+FLT_MAX_10_EXP     最大10进制指数
+FLT_MAX_EXP        最大2进制指数
+FLT_MIN            最小值
+FLT_MIN_10_EXP     最小10进制指数
+FLT_MIN_EXP        最小2进制指数
+FLT_RADIX          进制基数
+FLT_ROUNDS     加法舍入
+ 
+ 
+long double
+LDBL_DIG           long double小数点后面精确的位数
+LDBL_EPSILON       小的正数,long double的0跨度值
+LDBL_MANT_DLG      尾数中的位数
+LDBL_MAX           最大值
+LDBL_MAX_10_EXP    最大10进制指数
+LDBL_MAX_EXP       最大2进制指数
+LDBL_MIN           最小值
+LDBL_MIN_10_EXP    最小10进制指数
+LDBL_MIN_EXP       最小2进制指数
+*/

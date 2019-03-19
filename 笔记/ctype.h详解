@@ -1,0 +1,19 @@
+/*
+ * 主要测试该头文件中的如下函数：
+ * isalnum , isdigit , isalpha , isascii , iscntrl , ispunct
+ * isgraphics , isprint , islower , isupper , isxdigit
+ * 需要注意的是：这些均为宏定义，非真正函数。
+ * int isalnum (int c) 测试字符是否为英文或数字,在标准c中相当于使用“isalpha(c) || isdigit(c)”
+ * int isalpha (int c) 检查参数c是否为英文字母 ,在标准c中相当于使用“isupper(c)||islower(c)”
+ * int isascii(int c)  检查参数c是否为ASCII码字符，也就是判断c的范围是否在0到127之间。
+ * int iscntrl(int c)  检查参数c是否为ASCII控制码，也就是判断c的范围是否在0到30之间。
+ * int isdigit(int c)  检查参数c是否为阿拉伯数字0到9。
+ * int isgraph (int c) 检查参数c是否为可打印字符，若c所对映的ASCII码可打印，且非空格字符则返回TRUE。
+ * int islower(int c)  检查参数c是否为小写英文字母。
+ * int isprint(int c)  检查参数c是否为可打印字符，若c所对映的ASCII码可打印，其中包含空格字符，则返回TRUE。
+ * int isspace(int c)  检查参数c是否为空格字符，也就是判断是否为空格('')、定位字符('\t')、CR('\r')、换行('\n')、垂直定位字符('\v')或翻页('\f')的情况。
+ * int ispunct(int c)  检查参数c是否为标点符号或特殊符号。返回TRUE也就是代表参数c为非空格、非数字和非英文字母。
+ * int isupper(int c)  检查参数c是否为大写英文字母。
+ * int isxdigit (int c)检查参数c是否为16进制数字，只要c为下列其中一个情况则返回TRUE。16进制数字:0123456789ABCDEF。
+ */
+
