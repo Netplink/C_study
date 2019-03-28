@@ -12,7 +12,7 @@
 #define SIZE 5
 void copy_arr(double sou[],double ar2[],int size);
 void copy_ptr(double *sou,double *ar2,int size);
-void show_arr(double arr,int size);
+void show_arr(double *arr,int size);
 int main(void){
     double source[SIZE] = {1.1,2.2,3.3,4.4,5,5};
     double target1[SIZE];
@@ -38,7 +38,7 @@ void copy_ptr(double *sou,double *ar2,int size){
     for(int i = 0;i < size;i++)
         *(ar2+i) = *(sou+i);
 }
-void show_arr(double arr,int size){
+void show_arr(double *arr,int size){
     for(int i = 0;i < size;i++)
         printf(" %g",*(arr+i));
     putchar('\n');
