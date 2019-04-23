@@ -18,12 +18,12 @@ int main(void)
     scanf("%c",&ch);
     for(int i = 0;i <= ch - 'A';i++)
     {
-        for(int n = ch - 'A' -1;n >= i;n--)
-        printf(" ");
+        for(int n = ch - 'A' - 1;n >= i;n--)
+            printf(" ");
         for(int j = 0; j <= i; j++)
-        printf("%c",'A'+j);
+            printf("%c",'A'+j);
         for(int k = i - 1; k >= 0; k--)
-        printf("%c",'A'+k);
+            printf("%c",'A'+k);
         printf("\n");
     }
     return 0;

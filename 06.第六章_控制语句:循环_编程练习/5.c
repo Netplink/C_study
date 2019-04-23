@@ -9,6 +9,6 @@ int main(void)
     printf("请输入表的上限和下限:");
     scanf("%d %d",&up ,&down);
     for(;up - down >= 0;down++)
-    printf("%d 平方 %d 立方 %d\n",down,down*down,down*down*down);
+        printf("%d 平方 %d 立方 %d\n",down,down*down,down*down*down);
     return 0;
 }
