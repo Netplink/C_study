@@ -1,0 +1,21 @@
+string.h详解
+size_t strlen(const char *s1) 返回参数中的字符的个数 不包括空字符  返回int
+
+char *strcat(char *s1,const char *s2) 两个参数，把第二个参数字符串加到第一个参数字符串的末尾  返回char*(第一个参数的地址)
+char *strncat(char *s1,const char *s2,size_t n) 三个参数，把第二个参数字符串加到第一个参数字符串的末尾，第三个参数为整数(要加字符的个数)  返回char*(第一个参数的地址)
+
+int strcmp(const char *s1,const char *s2) 两个参数，比较两个字符串是否相同。 相同返回0，不相同，如果第一个参数在 ascii表 中的顺序 先于 第二个字符串 则返回负数， 反之正数(空字符\0为ascii中的0)
+int strncmp(const char *1,const char *s2,size_t n) 三个参数，比较第一个参数和第二个参数 是否相同。第三个参数为要比较字符的数目(int)
+
+char *strcpy(char *s1,const char* s2) 两个参数， 把第二个参数字符串复制到第一个参数字符串 返回char*(第一个参数的地址)
+char *strncpy(char *s1,const char *s2,size_t n) 三个参数 ， 第三个参数指定需要从第二个参数赋值到第一个参数的的字符个数
+
+sprintf() 在stdio.h中 三个参数，把第二个参数和第三个参数合并起来 写入到第一个参数 第二个参数为格式控制字符串，相当于printf()的第一参数，  第三个参数相当于printf()的第二个参数
+
+char *strchr(const char *s1,int c) 返回第二个参数在第一个参数中第一次出现的地址(包括空字符) 如果没有找到则返回空指针
+
+char *strpbrk(const char *s1,const char *s2) 返回第二个参数的任何字符在第一个参数中第一次出现的地址 如果没有找到则返回空指针 (不包括空字符)
+
+char *strrchr(const char *s1,int c) 返回第二个参数在第一个参数中最后一次出现的地址(包括空字符) 如果没有找到则返回空指针
+
+char *strstr(const char *s1,const char *s2) 返回第二个参数(字符串)在第一个参数中第一个出现的地址 如果没有找到则返回空指针

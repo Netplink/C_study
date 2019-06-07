@@ -8,26 +8,26 @@
 void Fun(char *ar,int n);
 int main(void){
     char a[LINELEN];
-    char nu[1];
-    int num;
+    char num[9999];
 
     puts("输入要读入的字符个数：");
-    gets(&num);
-    // num = atoi(nu);
-    getchar(); // 吃掉回车
+    fgets(num,9999,stdin);
 
     puts("请输入字符:");
-    Fun(a,num);
+    Fun(a,atoi(num));
     putchar('\n');
     puts(a);
 
-    return 0
+    return 0;
 }
 void Fun(char *ar,int n){
+    char ch;
     for(int i = 0;i < n;i++){
-        *(ar+i) = getchar();
-        *(ar+i+1) = '\0';
-        if(isspace(*(ar+i))) // 遇到非数字字母 则停止读取输入
+        ch = getchar();
+        if(!isspace(ch)){
+            *(ar+i) = ch;
+            *(ar+i+1) = '\0';
+        }else
             break;
     }
 }

@@ -1,0 +1,1 @@
+float ranktable(char *opt,char *para);
